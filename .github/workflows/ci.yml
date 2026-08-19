@@ -1,0 +1,22 @@
+name: CI Practice Pipeline
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repository code
+        uses: actions/checkout@v4
+
+      - name: Run a test script
+        run: |
+          echo "Running automated tests..."
+          echo "CI pipeline completed successfully!"
