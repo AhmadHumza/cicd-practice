@@ -1,0 +1,5 @@
+venv/
+dev.duckdb
+target/
+logs/
+.DS_Store
